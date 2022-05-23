@@ -3,16 +3,6 @@
     "name": "hoge-container",
     "image": "724709665339.dkr.ecr.ap-northeast-1.amazonaws.com/hello-repository:latest",
     "essential": true,
-    "cpu": 128,
-    "memoryReservation": 64,
-    "logConfiguration": {
-      "logDriver": "awslogs",
-      "options": {
-        "awslogs-region": "ap-northeast-1",
-        "awslogs-stream-prefix": "hoge",
-        "awslogs-group": "/ecs/hoge"
-      }
-    },
     "portMappings": [
       {
         "protocol": "tcp",
